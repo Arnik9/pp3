@@ -4,6 +4,7 @@
 public class Test {
     public static void main(String[] args)
     {
-        thisfile.repeareText("E:\\a.txt");
+        thisfile tf = new thisfile();
+        tf.repeareText("E:\\a.txt");
     }
 }

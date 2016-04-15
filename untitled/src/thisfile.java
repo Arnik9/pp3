@@ -4,16 +4,21 @@ import java.io.*;
  * Created by Student on 01.04.2016.
  */
 public class thisfile {
-    private final static String[] nol = {"one thousandth","two thousandth","three thousandth","four thousandth","five thousandth","six thousandth","seven thousandth","eight thousandth","nine thousandth"};
-    private final static String[] one = {"one hundred","two hundred","three hundred","four hundred","five hundred","six hundred","seven hundred","eight hundred","nine hundred"};
-    private final static String[] two = {"ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
-    private final static String[] three = {"eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
-    private final static String[] four = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
-    private final static String[] five = {"hundred", "thousandth", "million", "", "", "", "", "", ""};
+    private final String[] nol = {"one thousandth","two thousandth","three thousandth","four thousandth","five thousandth","six thousandth","seven thousandth","eight thousandth","nine thousandth"};
+    private final String[] one = {"one hundred","two hundred","three hundred","four hundred","five hundred","six hundred","seven hundred","eight hundred","nine hundred"};
+    private final String[] two = {"ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
+    private final String[] three = {"eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
+    private final String[] four = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+    private final String[] five = {"hundred", "thousandth", "million", "", "", "", "", "", ""};
 
-    static String[] str1;
+    private String[] str1;
 
-    public static String repeareText(String path) {
+    public thisfile()
+    {
+
+    }
+
+    public String repeareText(String path) {
         StringBuilder str = new StringBuilder();
         try {
             BufferedReader in = new BufferedReader(new FileReader(path));
